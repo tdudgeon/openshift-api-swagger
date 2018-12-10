@@ -63,6 +63,10 @@ objects:
     labels:
       app: ${APP_NAME}
     name: ${APP_NAME}
+    annotations:
+      # Note: Set to false to avoid exhausting certificate generation request quota.
+      # Change this to true if/when you are ready for secure the route with trusted certificates.
+      kubernetes.io/tls-acme: 'false'
   spec:
     host: ${HOSTNAME_HTTP}
     port:

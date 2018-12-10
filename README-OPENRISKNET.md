@@ -29,7 +29,7 @@ To customise this for your own VRE:
 5. run `oc process -f openshift-api-swagger-template.yml | oc create -f-` (NOTE: the instructions in the README.md document from the sabre1041/openshift-api-swagger repo are incorrect in this respect).
 6. ssh to the master node and edit `/etc/origin/master-config.yaml`. Add your route name to the list of CORS origins in the corsAllowedOrigins section (you will add a line like this `- (?i)//swagger-ui\.prod\.openrisknet\.org(:|\z)`). Restart the origin-master-api service: `systemctl restart origin-master-api.service` 
 7. after deployment is complete point your browser to http://swagger-ui.prod.openrisknet.org (or whatever is appropriate for your site)
-
+8. once you are happy with things edit the route definition and change the value of the `kubernetes.io/tls-acme` anotation to `true` to enable trusted certificates
   
 
 
