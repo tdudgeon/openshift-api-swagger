@@ -144,7 +144,7 @@ parameters:
   displayName: Git Repository URL
   name: SOURCE_REPOSITORY_URL
   required: true
-  value: https://github.com/sabre1041/openshift-api-swagger.git
+  value: https://github.com/openrisknet/openshift-api-swagger.git
 - description: Git branch/tag reference.
   displayName: Git Reference
   name: SOURCE_REPOSITORY_REF
@@ -154,6 +154,7 @@ parameters:
   displayName: Custom http Route Hostname
   name: HOSTNAME_HTTP
   required: false
+  value: 'swagger-ui.prod.openrisknet.org'
 - description: Maximum amount of memory the container can use.
   displayName: Memory Limit
   name: MEMORY_LIMIT
