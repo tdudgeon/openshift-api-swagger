@@ -158,7 +158,7 @@ parameters:
   displayName: Custom http Route Hostname
   name: HOSTNAME_HTTP
   required: false
-  value: 'swagger-ui.prod.openrisknet.org'
+  value: 'swagger-ui.192.168.99.100.nip.io'
 - description: Maximum amount of memory the container can use.
   displayName: Memory Limit
   name: MEMORY_LIMIT
