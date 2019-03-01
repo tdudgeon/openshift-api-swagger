@@ -11,13 +11,13 @@ objects:
   kind: ImageStream
   metadata:
     labels:
-      application: ${APP_NAME}
+      app: ${APP_NAME}
     name: ${APP_NAME}
 - apiVersion: v1
   kind: BuildConfig
   metadata:
     labels:
-      application: ${APP_NAME}
+      app: ${APP_NAME}
     name: ${APP_NAME}
   spec:
     output:
