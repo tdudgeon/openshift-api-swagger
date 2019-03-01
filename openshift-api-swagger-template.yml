@@ -148,7 +148,7 @@ parameters:
   displayName: Git Repository URL
   name: SOURCE_REPOSITORY_URL
   required: true
-  value: https://github.com/openrisknet/openshift-api-swagger.git
+  value: https://github.com/tdudgeon/openshift-api-swagger.git
 - description: Git branch/tag reference.
   displayName: Git Reference
   name: SOURCE_REPOSITORY_REF
